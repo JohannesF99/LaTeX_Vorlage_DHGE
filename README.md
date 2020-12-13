@@ -1,6 +1,5 @@
 Dies ist eine unoffizielle Vorlage für Projektarbeiten der Dualen Hochschule Gera-Eisenach unter Beachtung der formalen Vorgaben.
 
-
 Tabelle:
 
 -Schriftausrichtung entweder durch Links(l), Center(c) oder Rechts(r)
@@ -12,3 +11,7 @@ Tabelle:
 -senkrechter Stricht durch "\hline"
 
 -Abgrenzung der Spalten durch "&"
+
+Aufzählung:
+
+-Zeichen in Klammern gibt Aufzählung an, z.B.: "\item[a)]"
