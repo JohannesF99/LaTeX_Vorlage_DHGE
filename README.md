@@ -15,3 +15,9 @@ Tabelle:
 Aufzählung:
 
 -Zeichen in Klammern gibt Aufzählung an, z.B.: "\item[a)]"
+
+Formeln:
+
+-Formel positioniert sich immer zentral zum "&", z.B.: F &= m * g
+
+=> alle Formeln sind zentral zum Gleichheitszeichen
