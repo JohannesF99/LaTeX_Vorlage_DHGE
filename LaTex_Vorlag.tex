@@ -1,0 +1,225 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[
+  left=3cm,right=2cm,
+  top=2.5cm,bottom=2.5cm,
+]{geometry}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{eurosym}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{centernot}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{acronym}
+\usepackage{ulem}
+\usetikzlibrary{automata, positioning, shadows, shapes, snakes, chains, calc, arrows}
+\tikzset{initial text={}}
+\lstset{frame=single}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12}
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\lstdefinestyle{mystyle}{
+    breakatwhitespace=false,         
+    breaklines=true,                                                    
+    numbers=left,                                    
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,  
+    basicstyle=\small,       
+}
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self, sudo},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+showstringspaces=false
+}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\titleformat{\section}{\normalfont\large}{}{\textbf}{\textbf}
+\titleformat{\subsection}{\normalfont\large}{}{}{}
+\newcommand{\punkte}[1]{\hfill[ \hspace{2mm} / #1] Punkte}
+\newcommand{\krel}{\kappa_{\text{rel}}}
+\setlength\parindent{0pt}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\pagestyle{fancy}
+\fancyhead[C]{\textbf{\large{THEMA}}\\ \pagemark}
+\fancyhead[LE,RO]{Name, Vorname\\Matrikelnummer\\Duale Hochschule Gera}
+\fancyfoot[C]{}
+\title{Projektarbeit}
+\setcounter{secnumdepth}{0}
+\onehalfspacing
+
+%Kopf & Fußzeile
+\usepackage{typearea}
+\usepackage{fancyhdr}
+\renewcommand{\footnotesize}{\fontsize{8pt}{3pt}\selectfont}
+
+\begin{document}
+
+\pythonstyle	
+\pagenumbering{gobble}
+\tableofcontents 
+
+\newpage
+	
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\phantomsection
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
+
+\newpage
+\section{Abkürzungsverzeichnis}
+\begin{acronym}[Bash]
+\acro{ABKRZ}{Abkürzung}
+\end{acronym}
+	
+\newpage
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\section{Thema 1}
+
+\subsection{Unterthema 1}
+\subsection{Unterthema 2}
+Dies ist eine \ac{ABKRZ}.\\
+Mathe-Formeln:
+\begin{align*}
+W &= U \cdot I \cdot t \\
+W &= P \cdot t
+\end{align*}
+\section{Thema 2}
+Zahlen im Text gibt man zum Beispiel so an: $500kWh$\\
+\\
+Eine Tabelle:
+\begin{table}[h]
+\centering
+\caption{Jahresverbrauch}
+\begin{tabular}[h]{L{4cm}|c|R{3cm}}
+relativer Preis& Anzahl & absoluter Preis \\
+\hline
+31,34 cent/kWh & 800 kWh & 250,72 Euro\\
+99,54 \euro /a & 1 Jahr & 99,54 Euro\\
+ \end{tabular}
+\end{table}
+
+\section{Thema 3}
+
+\subsection{Unterthema 1}
+Eine Aufzählung:\\
+\begin{enumerate}
+\item[•]H0: Lastprofil für Haushalte
+\item[•]G0: Gewerbe allgemein
+\item[•]G6: Wochenendbetriebe
+\item[•]L0: Landwirtschaftsbetriebe 
+\item[•]L1: LWB mit Milchwirtschaft / Neben-erwerbstierzucht
+\end{enumerate}
+
+\newpage
+\section{Thema 4}
+Verweis auf Bilder etc.: Auf \ref{Wasserkocher und Fernseher} und Lösung \ref{Radio und Lampe} zu finden. \footnote{Fußnote}\\
+Code:
+\begin{lstlisting}
+public static void main(){
+	
+}
+\end{lstlisting}
+\subsection{Unterthema 1}
+Zitieren geht so. \cite{Test1}\\
+Bild einfügen:
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=13cm]{src/tabelle1.png}
+ \caption{Summenlastprofil}
+\end{figure}\\
+\newpage
+	\pagenumbering{Roman}
+	\setcounter{page}{4}
+	\pagenumbering{gobble}
+	\phantomsection
+	\addcontentsline{toc}{section}{Literatur}
+	\bibliographystyle{alpha}
+	\bibliography{quellen}{}
+
+
+\newpage
+	
+	\section{Anlagenverzeichnis}
+
+	\subsection{Lösungswege}	
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=13cm]{src/bild1.jpg}
+ \caption{Wasserkocher und Fernseher}
+ \label{Wasserkocher und Fernseher}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{src/bild2.jpg}
+ \caption{Radio und Lampe}
+ \label{Radio und Lampe}
+\end{figure}
+
+\newpage
+	\section{Ehrenwörtliche Erklärung}
+\begin{align*}
+\textbf{}
+\end{align*}
+Ich erkläre hiermit ehrenwörtlich,\\
+\begin{enumerate}
+\item[1.]dass ich meine Projektarbeit mit dem Thema:\\
+\\
+''\textit{Name}''\\
+\\
+ohne fremde Hilfe angefertigt habe,
+\item[2.]dass ich die Übernahme wörtlicher Zitate aus der Literatur sowie die Verwendung der Gedanken anderer Autoren an den entsprechenden Stellen innerhalb der Arbeit gekennzeichnet habe und
+\item[3.]dass ich meine Studienarbeit/Bachelorarbeit bei keiner anderen Prüfung vorgelegt habe.
+\end{enumerate}
+Ich bin mir bewusst, dass eine falsche Erklärung rechtliche Folgen haben wird.\\
+\begin{align*}
+\textbf{}
+\end{align*}
+\begin{tabular}{lp{2em}l}
+ \hspace{5cm}   && \hspace{4cm} \\\cline{1-1}\cline{3-3}
+ Ort, Datum     && Unterschrift
+\end{tabular}
+\end{document}
