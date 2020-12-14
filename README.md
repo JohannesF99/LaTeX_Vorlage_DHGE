@@ -11,6 +11,7 @@
 - Nach jeder Änderung muss LaTeX die pdf neu generieren, im Fall von TeXmaker funktionert das mithilfe von "F1"
 - Quellen werden in der Datei "quellen.bib" gespeichert und mithilfe von "F11" (in TeXmaker) bereitgestellt.
 - Die römische Nummerierung ab dem Literaturverzeichnis funktioniert nicht automatisch
+
 => muss manuell eingetragen werden, siehe "\setcounter{Page}{NUMMER}"
 
 # Funktionen
