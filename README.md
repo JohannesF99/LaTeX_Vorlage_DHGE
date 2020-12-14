@@ -10,6 +10,7 @@
 - Anschließend kann die ".tex"-Datei geöffnet werden - Sie enthält den Code, wodurch LaTeX die pdf-Datei erstellt
 - Nach jeder Änderung muss LaTeX die pdf neu generieren, im Fall von TeXmaker funktionert das mithilfe von "F1"
 - Quellen werden in der Datei "quellen.bib" gespeichert und mithilfe von "F11" (in TeXmaker) bereitgestellt.
+- Beschriftung des Headers in Zeile 78-79
 - Die römische Nummerierung ab dem Literaturverzeichnis funktioniert nicht automatisch
 - => muss manuell eingetragen werden, siehe "\setcounter{Page}{NUMMER}"
 
