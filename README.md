@@ -10,6 +10,8 @@
 - Anschließend kann die ".tex"-Datei geöffnet werden - Sie enthält den Code, wodurch LaTeX die pdf-Datei erstellt
 - Nach jeder Änderung muss LaTeX die pdf neu generieren, im Fall von TeXmaker funktionert das mithilfe von "F1"
 - Quellen werden in der Datei "quellen.bib" gespeichert und mithilfe von "F11" (in TeXmaker) bereitgestellt.
+- Die römische Nummerierung ab dem Literaturverzeichnis funktioniert nicht automatisch
+=> muss manuell eingetragen werden, siehe "\setcounter{Page}{NUMMER}"
 
 # Funktionen
 
@@ -37,10 +39,10 @@
 
 ## Bilder
 
-- Pfad zum Bild mithilfe von "\includegraphics{Pfad_zum_Bild}"
+- Pfad zum Bild mithilfe von "\includegraphics{PFAD_ZUM_BILD}"
 - Breite/Höhe kann eingestellt werden
 
-=> siehe z.B.: eine Breite von 13cm: "\includegraphics[width=13cm]{Pfad}"
+=> siehe z.B.: eine Breite von 13cm: "\includegraphics[width=13cm]{PFAD}"
   
 ## Code
 
@@ -51,17 +53,17 @@
 ## Abkürzungen
 
 - wird im Abkürzungsverzeichnis (in Vorlage ab Zeile 111) hinzugefügt 
-- Muster: "\acro{Abkürzung}{Ausgeschrieben}"
-- im Dokument durch "\ac{Abkürzung}" aufgerufen
+- Muster: "\acro{ABKÜRZUNG}{AUSGESCHRIEBEN}"
+- im Dokument durch "\ac{ABKÜRZUNG}" aufgerufen
 
 ## Literatur und Zitate
 
 - verschiedene Arten von Quellen benötigen verschieden Informationen
 - für Websites: misc
-- Quellen benötigen Zugriffsnamen für LaTeX, so z.B.: @misc{Zugriffsname, ...}
+- Quellen benötigen Zugriffsnamen für LaTeX, so z.B.: @misc{ZUGRIFFSNAME, ...}
 - nachdem Quelle hinzugefügt wurde: BibTeX mehrfach aktualisieren ("F11" in TeXmaker)
-- Verweis auf Quelle in ".tex"-Datei mithilfe von "\cite{ZUgriffsname}"
+- Verweis auf Quelle in ".tex"-Datei mithilfe von "\cite{ZUGRIFFSNAME}"
 
 ## Fußnoten
 
-- mithilfe von "\footnote{Text}"
+- mithilfe von "\footnote{TEXT}"
