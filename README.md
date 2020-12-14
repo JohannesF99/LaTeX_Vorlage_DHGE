@@ -23,7 +23,7 @@
 
 - Feste Spaltengröße durch z.B.: `L{3cm}`
 
-- "caption": Name des Bildes (wird später im Abbildungsverzeichnis angezeigt).
+- `caption`: Name des Bildes (wird später im Abbildungsverzeichnis angezeigt).
 
 - senkrechter Stricht durch `\hline`
 
