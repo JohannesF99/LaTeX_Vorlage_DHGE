@@ -1,23 +1,25 @@
-Dies ist eine unoffizielle Vorlage für Projektarbeiten der Dualen Hochschule Gera-Eisenach unter Beachtung der formalen Vorgaben.
+# Dies ist eine unoffizielle Vorlage für Projektarbeiten der Dualen Hochschule Gera-Eisenach unter Beachtung der formalen Vorgaben.
 
-Tabelle:
+# Funktionen
 
--Schriftausrichtung entweder durch Links(l), Center(c) oder Rechts(r)
+## Tabelle:
 
--Feste Spaltengröße durch z.B.: L{3cm}
+- Schriftausrichtung entweder durch Links(l), Center(c) oder Rechts(r)
 
--"caption": Name des Bildes (wird später im Abbildungsverzeichnis angezeigt).
+- Feste Spaltengröße durch z.B.: L{3cm}
 
--senkrechter Stricht durch "\hline"
+- "caption": Name des Bildes (wird später im Abbildungsverzeichnis angezeigt).
 
--Abgrenzung der Spalten durch "&"
+- senkrechter Stricht durch "\hline"
 
-Aufzählung:
+- Abgrenzung der Spalten durch "&"
 
--Zeichen in Klammern gibt Aufzählung an, z.B.: "\item[a)]"
+## Aufzählung:
 
-Formeln:
+- Zeichen in Klammern gibt Aufzählung an, z.B.: "\item[a)]"
 
--Formel positioniert sich immer zentral zum "&", z.B.: F &= m * g
+## Formeln:
+
+- Formel positioniert sich immer zentral zum "&", z.B.: F &= m * g
 
 => alle Formeln sind zentral zum Gleichheitszeichen
