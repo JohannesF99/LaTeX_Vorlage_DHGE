@@ -13,7 +13,7 @@
 - Quellen werden in der Datei "quellen.bib" gespeichert und mithilfe von "F11" (in TeXmaker) bereitgestellt.
 - Beschriftung des Headers in Zeile 78-79
 - Die römische Nummerierung ab dem Literaturverzeichnis funktioniert nicht automatisch
-- => muss manuell eingetragen werden, siehe "\setcounter{Page}{NUMMER}"
+- => muss manuell eingetragen werden, siehe `\setcounter{Page}{NUMMER}`
 
 # Funktionen
 
