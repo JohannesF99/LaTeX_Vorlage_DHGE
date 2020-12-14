@@ -35,21 +35,18 @@
 ## Formeln:
 
 - Formel positioniert sich immer zentral zum "&", z.B.: F &= m * g
-
-=> alle Formeln sind zentral zum Gleichheitszeichen
+- => alle Formeln sind zentral zum Gleichheitszeichen
 
 ## Bilder
 
 - Pfad zum Bild mithilfe von "\includegraphics{PFAD_ZUM_BILD}"
 - Breite/Höhe kann eingestellt werden
-
-=> siehe z.B.: eine Breite von 13cm: "\includegraphics[width=13cm]{PFAD}"
+- => siehe z.B.: eine Breite von 13cm: "\includegraphics[width=13cm]{PFAD}"
   
 ## Code
 
 - Programmiersprache (language), Name (caption) und Start der Nummerierung (firstnumber) kann eingestellt werden
-
-=> siehe z.B.: "\begin{lstlisting}[language=Java, caption=Codeblock 1, style=mystyle, firstnumber=1]"
+- => siehe z.B.: "\begin{lstlisting}[language=Java, caption=Codeblock 1, style=mystyle, firstnumber=1]"
 
 ## Abkürzungen
 
