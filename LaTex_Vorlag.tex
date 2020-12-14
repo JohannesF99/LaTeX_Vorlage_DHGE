@@ -90,25 +90,27 @@ showstringspaces=false
 \begin{document}
 
 \pythonstyle	
-\pagenumbering{gobble}
-\tableofcontents 
-
-\newpage
-	
 \pagenumbering{Roman}
 \setcounter{page}{1}
 \phantomsection
+\addcontentsline{toc}{section}{Inhaltsverzeichnis}
+\tableofcontents 
+
+\newpage
+\phantomsection
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \listoffigures
+	
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\listoftables
 
 \newpage
 \section{Abkürzungsverzeichnis}
 \begin{acronym}[Bash]
 \acro{ABKRZ}{Abkürzung}
 \end{acronym}
-	
-\newpage
-\listoftables
 
 \newpage
 \pagenumbering{arabic}
@@ -128,13 +130,13 @@ Zahlen im Text gibt man zum Beispiel so an: $500kWh$\\
 \\
 Eine Tabelle:
 \begin{table}[h]
-\centering
 \caption{Jahresverbrauch}
+\centering
 \begin{tabular}[h]{L{4cm}|c|R{3cm}}
-relativer Preis& Anzahl & absoluter Preis \\
+Spalte 1 & Spalte 2 & Spalte 3 \\
 \hline
-31,34 cent/kWh & 800 kWh & 250,72 Euro\\
-99,54 \euro /a & 1 Jahr & 99,54 Euro\\
+Zeile 1/ Spalte 1 & Zeile 1/ Spalte 2 &Zeile 1/ Spalte 3\\
+Zeile 2/ Spalte 1 & Zeile 2/ Spalte 2& Zeile 2/ Spalte 3\\
  \end{tabular}
 \end{table}
 
@@ -143,20 +145,16 @@ relativer Preis& Anzahl & absoluter Preis \\
 \subsection{Unterthema 1}
 Eine Aufzählung:\\
 \begin{enumerate}
-\item[•]H0: Lastprofil für Haushalte
-\item[•]G0: Gewerbe allgemein
-\item[•]G6: Wochenendbetriebe
-\item[•]L0: Landwirtschaftsbetriebe 
-\item[•]L1: LWB mit Milchwirtschaft / Neben-erwerbstierzucht
+\item[•]Nummer 1
+\item[a)]Nummer 2
 \end{enumerate}
 
 \newpage
 \section{Thema 4}
-Verweis auf Bilder etc.: Auf \ref{Wasserkocher und Fernseher} und Lösung \ref{Radio und Lampe} zu finden. \footnote{Fußnote}\\
+Verweis auf Bilder etc.: Auf Anlage \ref{Anlage 1} zu finden. \footnote{Fußnote}\\
 Code:
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption=Codeblock 1, style=mystyle, firstnumber=1]
 public static void main(){
-	
 }
 \end{lstlisting}
 \subsection{Unterthema 1}
@@ -164,15 +162,15 @@ Zitieren geht so. \cite{Test1}\\
 Bild einfügen:
 \begin{figure}[h]
  \centering
- \includegraphics[width=13cm]{src/tabelle1.png}
- \caption{Summenlastprofil}
+ \includegraphics[width=5cm]{src/bild1.png}
+ \caption{Bild 1}
 \end{figure}\\
+
 \newpage
 	\pagenumbering{Roman}
-	\setcounter{page}{4}
-	\pagenumbering{gobble}
+	\setcounter{page}{5}
 	\phantomsection
-	\addcontentsline{toc}{section}{Literatur}
+	\addcontentsline{toc}{section}{Literaturverzeichnis}
 	\bibliographystyle{alpha}
 	\bibliography{quellen}{}
 
@@ -180,24 +178,19 @@ Bild einfügen:
 \newpage
 	
 	\section{Anlagenverzeichnis}
-
-	\subsection{Lösungswege}	
-
-\begin{figure}[h]
- \centering
- \includegraphics[width=13cm]{src/bild1.jpg}
- \caption{Wasserkocher und Fernseher}
- \label{Wasserkocher und Fernseher}
-\end{figure}
-
-\newpage
+	\subsection{Anlagen}	
 
 \begin{figure}[h]
  \centering
- \includegraphics[width=12cm]{src/bild2.jpg}
- \caption{Radio und Lampe}
- \label{Radio und Lampe}
+ \includegraphics[width=13cm]{src/bild1.png}
+ \caption{Anlage 1}
+ \label{Anlage 1}
 \end{figure}
+
+	\newpage
+	\phantomsection
+	\addcontentsline{toc}{subsection}{Listings}
+	\lstlistoflistings
 
 \newpage
 	\section{Ehrenwörtliche Erklärung}
