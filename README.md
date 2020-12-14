@@ -34,3 +34,34 @@
 - Formel positioniert sich immer zentral zum "&", z.B.: F &= m * g
 
 => alle Formeln sind zentral zum Gleichheitszeichen
+
+## Bilder
+
+- Pfad zum Bild mithilfe von "\includegraphics{Pfad_zum_Bild}"
+- Breite/Höhe kann eingestellt werden
+
+=> siehe z.B.: eine Breite von 13cm: "\includegraphics[width=13cm]{Pfad}"
+  
+## Code
+
+- Programmiersprache (language), Name (caption) und Start der Nummerierung (firstnumber) kann eingestellt werden
+
+=> siehe z.B.: "\begin{lstlisting}[language=Java, caption=Codeblock 1, style=mystyle, firstnumber=1]"
+
+## Abkürzungen
+
+- wird im Abkürzungsverzeichnis (in Vorlage ab Zeile 111) hinzugefügt 
+- Muster: "\acro{Abkürzung}{Ausgeschrieben}"
+- im Dokument durch "\ac{Abkürzung}" aufgerufen
+
+## Literatur und Zitate
+
+- verschiedene Arten von Quellen benötigen verschieden Informationen
+- für Websites: misc
+- Quellen benötigen Zugriffsnamen für LaTeX, so z.B.: @misc{Zugriffsname, ...}
+- nachdem Quelle hinzugefügt wurde: BibTeX mehrfach aktualisieren ("F11" in TeXmaker)
+- Verweis auf Quelle in ".tex"-Datei mithilfe von "\cite{ZUgriffsname}"
+
+## Fußnoten
+
+- mithilfe von "\footnote{Text}"
