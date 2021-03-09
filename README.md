@@ -9,6 +9,7 @@
   - [Kile](https://kile.sourceforge.io/)
 - Anschließend kann die ".tex"-Datei geöffnet werden - Sie enthält den Code, wodurch LaTeX die pdf-Datei erstellt
 - Nach jeder Änderung muss LaTeX die pdf neu generieren, im Fall von TeXmaker funktionert das mithilfe von "F1"
+- WICHTIG: Bei Texmaker muss in der Auswahlliste "Schnelles Übersetzen" statt "LaTeX" ausgewählt sein, sonst kompiliert es nicht
 - Damit das Inhaltsverzeichnis sich aktualisiert, muss die pdf 2mal in Folge generiert werden
 - Quellen werden in der Datei "quellen.bib" gespeichert und mithilfe von "F11" (in TeXmaker) bereitgestellt.
 - Beschriftung des Headers in Zeile 78-79
